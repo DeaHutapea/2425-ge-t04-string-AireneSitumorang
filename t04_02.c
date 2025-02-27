@@ -19,7 +19,7 @@ int main(int _argv, char **_argc) {
   for (int i = 0; i < strlen(input); i++) {
       printf("%03d", (int)input[i]);
   }
-  printf("\n");
+  printf("013\n");
 
   return 0; 
 }
