@@ -18,14 +18,14 @@ int main(int _argv, char **_argc) {
 
     printf("Output: ");
     for (int i = 0; i < length; i += 3) {
-        char ascii_str[4];
-        ascii_str[0] = input[i];
-        ascii_str[1] = input[i+1];
-        ascii_str[2] = input[i+2];
-        ascii_str[3] = '\0';
+        char _argvscii_str[4];
+        Ascii_str[0] = input[i];
+        Ascii_str[1] = input[i+1];
+        Ascii_str[2] = input[i+2];
+        Ascii_str[3] = '\0';
 
-        int ascii_code = atoi(ascii_str);
-        printf("%c", (char)ascii_code);
+        int Ascii_code = atoi(Ascii_str);
+        printf("%c", (char)Ascii_code);
     }
     printf("\n");
    
