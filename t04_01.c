@@ -5,10 +5,10 @@
 #include <stdlib.h>
 #include <string.h>
 
-int main(int _argv, char **_argc) {
+int main(int argc, char **argv) {
     char input[61]; 
     printf("Input: ");
-    scanf("%s", input);
+    scanf("%60s", input);
 
     int length = strlen(input);
     if (length < 3 || length > 60 || length % 3 != 0) {
@@ -18,7 +18,7 @@ int main(int _argv, char **_argc) {
 
     printf("Output: ");
     for (int i = 0; i < length; i += 3) {
-        char _argvscii_str[4];
+        char Ascii_str[4];
         Ascii_str[0] = input[i];
         Ascii_str[1] = input[i+1];
         Ascii_str[2] = input[i+2];
